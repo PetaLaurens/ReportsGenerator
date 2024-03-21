@@ -4,6 +4,8 @@
  */
 package reportsgenerator;
 
+import java.sql.SQLException;
+
 /**
  *
  * @author peta
@@ -14,7 +16,12 @@ public class ReportsGenerator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        try {
+            DataBaseConnector db = new DataBaseConnector();
+            db.readDataBase();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
     
 }
