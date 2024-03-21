@@ -19,15 +19,31 @@ public class DataBaseConnector {
     private final String USER = "integrated_CA";
     private final String PASSWORD = "integrated_CA";
     
-    public void readDataBase() throws SQLException {
+    public void courseReport() throws SQLException {
         try {
-            String sql = "SELECT * FROM Reports.students";
+            String sql = "SELECT modules.module_name,\n" +
+                        "	 courses.course_name,\n" +
+                        "	 COUNT(students.student_ID) AS student_enrolled,\n" +
+                        "        lecturers.lecturer_name,\n" +
+                        "	 modules.delivery_method\n" +
+                        "FROM modules\n" +
+                        "JOIN courses ON modules.course_ID = courses.course_ID\n" +
+                        "JOIN students ON modules.course_ID = students.course_ID\n" +
+                        "JOIN lecturers ON modules.module_ID = lecturers.module_ID\n" +
+                        "GROUP BY \n" +
+                        "    modules.module_name, \n" +
+                        "    courses.course_name, \n" +
+                        "    lecturers.lecturer_name, \n" +
+                        "    modules.delivery_method;";
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             
+            System.out.println("Module Name, Course Name, Students Enrolled, Lecturer Name, Delivery Method.");
+            System.out.println("");
+            
             while (rs.next()) {
-                System.out.println(rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3));
+                System.out.println(rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getInt(3) + ", " + rs.getString(4) + ", " + rs.getString(5));
             }
             conn.close();
         } catch (Exception e) {
