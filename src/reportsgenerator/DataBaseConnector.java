@@ -51,7 +51,6 @@ public class DataBaseConnector {
         }
     }
     
-    
     public void studentReport() throws SQLException {
         try {
             String sql = "SELECT students.student_name,\n" +
@@ -75,6 +74,38 @@ public class DataBaseConnector {
             while (rs.next()) {
                 System.out.println(rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getString(3) +
                         ", " + rs.getString(4) + ", " + rs.getString(5) + ", " + rs.getInt(6) + ", " + rs.getInt(7));
+            }
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void lecturerReport() throws SQLException {
+        try {
+            String sql = "SELECT lecturers.lecturer_name,\n" +
+                        "	   lecturers.lecturer_role,\n" +
+                        "       modules.module_name,\n" +
+                        "       COUNT(students.student_ID) AS students_enrolled,\n" +
+                        "       modules.class_subjects\n" +
+                        "FROM modules\n" +
+                        "JOIN lecturers ON modules.module_ID = lecturers.module_ID\n" +
+                        "JOIN students ON modules.course_ID = students.course_ID\n" +
+                        "GROUP BY \n" +
+                        "    lecturers.lecturer_name,\n" +
+                        "	lecturers.lecturer_role,\n" +
+                        "	modules.module_name,\n" +
+                        "    modules.class_subjects;";
+            Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            
+            System.out.println("Lecturer Name, Lecturer Role, Module Name, Students Enrolled, Class Subjects");
+            System.out.println("");
+            
+            while (rs.next()) {
+                System.out.println(rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getString(3) +
+                        ", " + rs.getInt(4) + ", " + rs.getString(5));
             }
             conn.close();
         } catch (Exception e) {
