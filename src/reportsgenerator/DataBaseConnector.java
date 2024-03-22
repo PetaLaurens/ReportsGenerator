@@ -48,7 +48,8 @@ public class DataBaseConnector {
             data = headers;
             
             while (rs.next()) {
-                data += rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getInt(3) + ", " + rs.getString(4) + ", " + rs.getString(5) + "\n";
+                data += rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getInt(3) +
+                        ", " + rs.getString(4) + ", " + rs.getString(5) + "\n";
             }
             conn.close();
 
@@ -58,7 +59,8 @@ public class DataBaseConnector {
         return data;
     }
     
-    public void studentReport() throws SQLException {
+    // Method that returns the information for the student report, extracted from a Reports database from MySqlWorkbench
+    public String studentReport() throws SQLException {
         try {
             String sql = "SELECT students.student_name,\n" +
                         "	   students.student_ID,\n" +
@@ -75,20 +77,23 @@ public class DataBaseConnector {
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             
-            System.out.println("Student Name, Student ID, Course Name, Module Name, Module Completed, Grade, Modules to be Repeated");
-            System.out.println("");
+            String headers = "Student Name, Student ID, Course Name, Module Name, Module Completed, Grade, Modules to be Repeated\n";
+
+            data = headers;
             
             while (rs.next()) {
-                System.out.println(rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getString(3) +
-                        ", " + rs.getString(4) + ", " + rs.getString(5) + ", " + rs.getInt(6) + ", " + rs.getInt(7));
+                data += rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getString(3) +
+                        ", " + rs.getString(4) + ", " + rs.getString(5) + ", " + rs.getInt(6) + ", " + rs.getInt(7) + "\n";
             }
             conn.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return data;
     }
     
-    public void lecturerReport() throws SQLException {
+    // Method that returns the information for the lecturer report, extracted from a Reports database from MySqlWorkbench
+    public String lecturerReport() throws SQLException {
         try {
             String sql = "SELECT lecturers.lecturer_name,\n" +
                         "	   lecturers.lecturer_role,\n" +
@@ -107,19 +112,21 @@ public class DataBaseConnector {
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             
-            System.out.println("Lecturer Name, Lecturer Role, Module Name, Students Enrolled, Class Subjects");
-            System.out.println("");
+            String headers = "Lecturer Name, Lecturer Role, Module Name, Students Enrolled, Class Subjects\n";
+            
+            data = headers;
             
             while (rs.next()) {
-                System.out.println(rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getString(3) +
-                        ", " + rs.getInt(4) + ", " + rs.getString(5));
+                data += rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getString(3) +
+                        ", " + rs.getInt(4) + ", " + rs.getString(5) + "\n";
             }
             conn.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return data;
     }
-    }
+}
 
 
 

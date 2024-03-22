@@ -18,7 +18,6 @@ public class TxtReport {
     public void generateTxtReport(String reportName) throws IOException, SQLException {
         BufferedWriter bw = new BufferedWriter(new FileWriter("report.txt", true));
         bw.write(reportName);
-        bw.newLine();
         bw.close();
     }
 }

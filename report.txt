@@ -1,102 +1,101 @@
-Module Name, Course Name, Students Enrolled, Lecturer Name, Delivery Method
-Internet of Things Analytics, Mathematics, 1, Emily Brown, Room Maple
-Introduction to Programming, Information Technology, 2, Susan Taylor, Room Cedar
-Quantum Computing Fundamentals, Medical Technology, 4, Robert Martinez, Online
-Secure Software Engineering, Information Technology, 2, Sarah Anderson, Room Cedar
-Reinforcement Learning, Mathematics, 1, James Thomas, Room Maple
-Advanced Edge Computing, Hematology, 1, William Martinez, Room Elm
-Data Structures and Algorithms, Medical Technology, 4, Karen Robinson, Online
-Big Data Analytics, Telemedicine, 2, Charles Lee, Room Pine
-Quantum Cryptography, Mathematics, 1, Amanda Scott, Room Maple
-Advanced Game Development, Hematology, 1, Paul Green, Room Elm
-Advanced Cryptographic Protocols, Information Technology, 2, Michelle Adams, Room Birch
-Advanced Machine Learning, Medical Technology, 4, Donna Campbell, Online
-Advanced Computer Architecture, Hematology, 1, Kimberly Carter, Room Elm
-Advanced Information Retrieval, Information Technology, 2, Mark Murphy, Room Birch
-Advanced Quantum Computing, Medical Technology, 4, Betty Ramirez, Online
-Web Development Basics, Hematology, 1, Edward Rivera, Room Elm
-Compiler Design and Construction, Healthcare Delivery, 2, Amy Torres, Room Cedar
-Parallel Programming, Hematology, 1, Nicholas Collins, Room Elm
-Advanced Cybersecurity, Information Technology, 2, Samantha Diaz, Room Birch
-Advanced HCI, Medical Technology, 4, Ronald Stewart, Online
-Computer Ethics and Society, Telemedicine, 2, Erica Gray, Room Maple
-Human-Robot Interaction, Information Technology, 2, Gary Cooper, Room Birch
-Internet of Things Security, Medical Technology, 4, Martha Morales, Online
-Advanced Robotics Systems, Mathematics, 1, Debra Peterson, Room Maple
-Big Data Management, Telemedicine, 2, Billy Collins, Online
-Quantum Cryptanalysis, Mathematics, 1, Scott Cook, Room Maple
-Machine Learning Fundamentals, History, 1, Patrick Murphy, Room Oak
-Natural Language Processing, Information Technology, 2, Angela Kelly, Room Elm
-Computer Vision Applications, Mathematics, 1, Lori Diaz, Room Maple
-Advanced Virtual Reality, Hematology, 1, Carolyn Morris, Room Elm
-Information Security Management, Medical Technology, 4, Terry James, Room Birch
-Advanced Database Systems, Mathematics, 1, Sharon Bell, Room Maple
-Advanced Topics in Software Security, Hematology, 1, Julie Henderson, Room Elm
-Advanced Cloud Computing Security, Information Technology, 2, Arthur Nelson, Room Birch
-Computer Architecture, Mathematics, 1, Willie Evans, Online
-Advanced Topics in Machine Learning, Hematology, 1, Kathryn Howard, Room Elm
-Advanced Network Programming, Information Technology, 2, Kyle Bailey, Room Birch
-Advanced Quantum Cryptography, Medical Technology, 4, Jeanne Perez, Online
-Artificial Intelligence Basics, Marketing, 2, Gerald Coleman, Online
-Advanced Data Mining Techniques, Medical Technology, 4, Samuel Barnes, Online
-Advanced Natural Language Understanding, Information Technology, 2, Alice Mitchell, Room Birch
-Advanced Cyber-Physical Security, Mathematics, 1, Louis Reed, Room Maple
-Blockchain Applications, Medical Technology, 4, Dennis Flores, Online
-Virtual Reality Fundamentals, Mathematics, 1, Beverly Green, Room Cedar
-Advanced Database Security, Mathematics, 1, Amber Watson, Room Maple
-Advanced Network Security Management, Hematology, 1, Deborah Richardson, Room Elm
-Quantum Information Science, Mathematics, 1, Ashley Parker, Room Maple
-Advanced Natural Language Generation, Hematology, 1, Russell Gonzalez, Room Elm
-Computer Forensics, Information Technology, 2, Harold Mitchell, Room Elm
-Quantum Key Distribution, Medical Technology, 4, Joan Simmons, Online
-Advanced Network Security, Information Technology, 2, Diane Perez, Room Birch
-Cloud Security, Medical Technology, 4, Nicholas Edwards, Room Birch
-Advanced Topics in Computer Vision, Mathematics, 1, Sandra Turner, Room Maple
-Adversarial Machine Learning, Medical Technology, 4, Kathleen Coleman, Online
-Mobile Robotics, Hematology, 1, Alan Lopez, Room Cedar
-Advanced Cloud Computing Architectures, Hematology, 1, Gloria Ross, Room Elm
-Embedded Software Development, Information Technology, 2, Joyce Torres, Room Maple
-Advanced Topics in Cryptography, Medical Technology, 4, Shirley Hill, Online
-Quantum Machine Learning, Mathematics, 1, Clarence Peterson, Room Maple
-Computer Vision and Pattern Recognition, Telemedicine, 2, Marie Rivera, Room Elm
-Advanced Topics in Blockchain, Mathematics, 1, Chris Scott, Room Maple
-Advanced Edge Computing, Hematology, 1, Julia Patterson, Room Elm
-Computational Neuroscience Applications, Hematology, 1, Howard Cox, Room Elm
-Advanced Machine Learning, Medical Technology, 4, Tina Long, Online
-Advanced Quantum Computing, Medical Technology, 4, Jimmy Perry, Online
-Advanced Data Privacy, Information Technology, 2, Janet Powell, Room Birch
-Human-Robot Interaction, Information Technology, 2, Albert Baker, Room Birch
-Advanced Robotics Systems, Mathematics, 1, Rosemary Hughes, Room Maple
-Advanced Cloud Security, Medical Technology, 4, Earl Coleman, Online
-Advanced Virtual Reality, Hematology, 1, Janice Martinez, Room Elm
-Advanced Quantum Cryptography, Medical Technology, 4, Jeremy Campbell, Online
-Internet of Things Analytics, Mathematics, 1, Kathy Harris, Room Maple
-Deep Learning, Information Technology, 2, Keith King, Room Birch
-Advanced Cyber-Physical Security, Mathematics, 1, Amy Robinson, Room Maple
-Advanced Network Security Management, Hematology, 1, Judith Powell, Room Elm
-Advanced Game Development, Hematology, 1, Steven Coleman, Room Elm
-Advanced Internet of Things, Medical Technology, 4, Larry Flores, Online
-Advanced Information Retrieval, Information Technology, 2, Cheryl Ward, Room Birch
-Data Mining and Knowledge Discovery, Information Technology, 2, Ronald Richardson, Room Birch
-Advanced Natural Language Understanding, Mathematics, 1, Joyce Griffin, Room Maple
-Advanced HCI, Medical Technology, 4, Deborah Bryant, Online
-Advanced Topics in Edge Computing, Hematology, 1, Martha Ramirez, Room Elm
-Advanced Cloud Computing Architectures, Medical Technology, 4, Harold Barnes, Online
-Quantum Cryptanalysis, Mathematics, 1, Cynthia Rivera, Room Maple
-Cloud Computing Architectures, Information Technology, 2, Jeffrey Hernandez, Room Birch
-Advanced Quantum Machine Learning, Mathematics, 1, Teresa Powell, Room Maple
-Advanced Topics in Mobile Computing, Hematology, 1, Beverly James, Room Elm
-Advanced Topics in Software Security, Hematology, 1, Gary Taylor, Room Elm
-Introduction to Programming, Information Technology, 2, Gloria Green, Room Cedar
-Advanced Data Mining Techniques, Medical Technology, 4, Phillip Lopez, Online
-Advanced Cybersecurity, Information Technology, 2, Catherine Perez, Room Birch
-Advanced Database Security, Mathematics, 1, Louis Hernandez, Room Maple
-Advanced Natural Language Generation, Hematology, 1, Gerald Ross, Room Elm
-Machine Learning Fundamentals, History, 1, Jane Gray, Room Oak
-Quantum Key Distribution, Medical Technology, 4, Justin Nelson, Online
-Advanced Natural Language Understanding, Information Technology, 2, Diane Rodriguez, Room Birch
-Advanced Topics in Computer Vision, Mathematics, 1, Teresa Richardson, Room Maple
-Advanced Cloud Computing Architectures, Hematology, 1, Judith Kelly, Room Elm
-Cloud Computing Fundamentals, Mathematics, 1, Martha Ward, Online
-Advanced Topics in Cryptography, Medical Technology, 4, Jerry Patterson, Online
-
+Lecturer Name, Lecturer Role, Module Name, Students Enrolled, Class Subjects
+Emily Brown, Senior lecturer, Internet of Things Analytics, 1, IoT Analytics
+Susan Taylor, Associate lecturer, Introduction to Programming, 2, Programming Fundamentals
+Robert Martinez, Senior lecturer, Quantum Computing Fundamentals, 4, Quantum Computing
+Sarah Anderson, Professor, Secure Software Engineering, 2, Secure Software Engineering
+James Thomas, Associate lecturer, Reinforcement Learning, 1, Reinforcement Learning
+William Martinez, Professor, Advanced Edge Computing, 1, Advanced Edge Computing
+Karen Robinson, Associate lecturer, Data Structures and Algorithms, 4, Data Structures
+Charles Lee, Senior lecturer, Big Data Analytics, 2, Big Data Analytics
+Amanda Scott, Professor, Quantum Cryptography, 1, Quantum Cryptography
+Paul Green, Senior lecturer, Advanced Game Development, 1, Advanced Game Development
+Michelle Adams, Professor, Advanced Cryptographic Protocols, 2, Advanced Crypto Protocols
+Donna Campbell, Professor, Advanced Machine Learning, 4, Advanced Machine Learning
+Kimberly Carter, Associate lecturer, Advanced Computer Architecture, 1, Advanced Computer Architecture
+Mark Murphy, Programme manager, Advanced Information Retrieval, 2, Advanced Information Retrieval
+Betty Ramirez, Professor, Advanced Quantum Computing, 4, Advanced Quantum Computing
+Edward Rivera, Associate lecturer, Web Development Basics, 1, Web Fundamentals
+Amy Torres, Senior lecturer, Compiler Design and Construction, 2, Compiler Construction
+Nicholas Collins, Professor, Parallel Programming, 1, Parallel Programming
+Samantha Diaz, Associate lecturer, Advanced Cybersecurity, 2, Advanced Cybersecurity
+Ronald Stewart, Senior lecturer, Advanced HCI, 4, Advanced HCI
+Erica Gray, Senior lecturer, Computer Ethics and Society, 2, Computer Ethics
+Gary Cooper, Professor, Human-Robot Interaction, 2, Human-Robot Interaction
+Martha Morales, Associate lecturer, Internet of Things Security, 4, IoT Security
+Debra Peterson, Professor, Advanced Robotics Systems, 1, Advanced Robotics Systems
+Billy Collins, Professor, Big Data Management, 2, Big Data Management
+Scott Cook, Programme manager, Quantum Cryptanalysis, 1, Quantum Cryptanalysis
+Patrick Murphy, Associate lecturer, Machine Learning Fundamentals, 1, Machine Learning
+Angela Kelly, Senior lecturer, Natural Language Processing, 2, NLP Basics
+Lori Diaz, Associate lecturer, Computer Vision Applications, 1, Computer Vision Applications
+Carolyn Morris, Professor, Advanced Virtual Reality, 1, Advanced Virtual Reality
+Terry James, Senior lecturer, Information Security Management, 4, Information Security
+Sharon Bell, Professor, Advanced Database Systems, 1, Advanced Databases
+Julie Henderson, Senior lecturer, Advanced Topics in Software Security, 1, Advanced Software Security
+Arthur Nelson, Professor, Advanced Cloud Computing Security, 2, Advanced Cloud Security
+Willie Evans, Senior lecturer, Computer Architecture, 1, Computer Architecture
+Kathryn Howard, Associate lecturer, Advanced Topics in Machine Learning, 1, Advanced Machine Learning
+Kyle Bailey, Senior lecturer, Advanced Network Programming, 2, Advanced Network Programming
+Jeanne Perez, Professor, Advanced Quantum Cryptography, 4, Advanced Quantum Cryptography
+Gerald Coleman, Associate lecturer, Artificial Intelligence Basics, 2, Artificial Intelligence
+Samuel Barnes, Professor, Advanced Data Mining Techniques, 4, Advanced Data Mining
+Alice Mitchell, Associate lecturer, Advanced Natural Language Understanding, 2, Advanced NLU
+Louis Reed, Senior lecturer, Advanced Cyber-Physical Security, 1, Advanced CPSecurity
+Dennis Flores, Programme manager, Blockchain Applications, 4, Blockchain Applications
+Beverly Green, Senior lecturer, Virtual Reality Fundamentals, 1, Virtual Reality
+Amber Watson, Professor, Advanced Database Security, 1, Advanced Database Security
+Deborah Richardson, Senior lecturer, Advanced Network Security Management, 1, Advanced Network Security Management
+Ashley Parker, Associate lecturer, Quantum Information Science, 1, Quantum Information Science
+Russell Gonzalez, Senior lecturer, Advanced Natural Language Generation, 1, Advanced NLG
+Harold Mitchell, Senior lecturer, Computer Forensics, 2, Computer Forensics
+Joan Simmons, Professor, Quantum Key Distribution, 4, Quantum Key Distribution
+Diane Perez, Associate lecturer, Advanced Network Security, 2, Advanced Network Security
+Nicholas Edwards, Senior lecturer, Cloud Security, 4, Cloud Security
+Sandra Turner, Professor, Advanced Topics in Computer Vision, 1, Advanced Computer Vision
+Kathleen Coleman, Associate lecturer, Adversarial Machine Learning, 4, Adversarial ML
+Alan Lopez, Senior lecturer, Mobile Robotics, 1, Mobile Robotics
+Gloria Ross, Professor, Advanced Cloud Computing Architectures, 1, Advanced Cloud Architectures
+Joyce Torres, Senior lecturer, Embedded Software Development, 2, Embedded Software
+Shirley Hill, Professor, Advanced Topics in Cryptography, 4, Advanced Cryptography
+Clarence Peterson, Associate lecturer, Quantum Machine Learning, 1, Quantum ML
+Marie Rivera, Senior lecturer, Computer Vision and Pattern Recognition, 2, Vision and Pattern Recognition
+Chris Scott, Professor, Advanced Topics in Blockchain, 1, Advanced Blockchain Topics
+Julia Patterson, Professor, Advanced Edge Computing, 1, Advanced Edge Computing
+Howard Cox, Programme manager, Computational Neuroscience Applications, 1, Neuroscience Applications
+Tina Long, Senior lecturer, Advanced Machine Learning, 4, Advanced Machine Learning
+Jimmy Perry, Professor, Advanced Quantum Computing, 4, Advanced Quantum Computing
+Janet Powell, Associate lecturer, Advanced Data Privacy, 2, Advanced Data Privacy
+Albert Baker, Senior lecturer, Human-Robot Interaction, 2, Human-Robot Interaction
+Rosemary Hughes, Professor, Advanced Robotics Systems, 1, Advanced Robotics Systems
+Earl Coleman, Associate lecturer, Advanced Cloud Security, 4, Advanced Cloud Security
+Janice Martinez, Professor, Advanced Virtual Reality, 1, Advanced Virtual Reality
+Jeremy Campbell, Professor, Advanced Quantum Cryptography, 4, Advanced Quantum Cryptography
+Kathy Harris, Associate lecturer, Internet of Things Analytics, 1, IoT Analytics
+Keith King, Senior lecturer, Deep Learning, 2, Deep Learning
+Amy Robinson, Professor, Advanced Cyber-Physical Security, 1, Advanced CPSecurity
+Judith Powell, Professor, Advanced Network Security Management, 1, Advanced Network Security Management
+Steven Coleman, Associate lecturer, Advanced Game Development, 1, Advanced Game Development
+Larry Flores, Professor, Advanced Internet of Things, 4, Advanced IoT
+Cheryl Ward, Associate lecturer, Advanced Information Retrieval, 2, Advanced Information Retrieval
+Ronald Richardson, Senior lecturer, Data Mining and Knowledge Discovery, 2, Data Mining and Knowledge Discovery
+Joyce Griffin, Programme manager, Advanced Natural Language Understanding, 1, Advanced NLU
+Deborah Bryant, Associate lecturer, Advanced HCI, 4, Advanced HCI
+Martha Ramirez, Professor, Advanced Topics in Edge Computing, 1, Advanced Edge Computing
+Harold Barnes, Professor, Advanced Cloud Computing Architectures, 4, Advanced Cloud Architectures
+Cynthia Rivera, Associate lecturer, Quantum Cryptanalysis, 1, Quantum Cryptanalysis
+Jeffrey Hernandez, Senior lecturer, Cloud Computing Architectures, 2, Cloud Computing Architectures
+Teresa Powell, Professor, Advanced Quantum Machine Learning, 1, Advanced Quantum ML
+Beverly James, Professor, Advanced Topics in Mobile Computing, 1, Advanced Mobile Computing
+Gary Taylor, Associate lecturer, Advanced Topics in Software Security, 1, Advanced Software Security
+Gloria Green, Professor, Introduction to Programming, 2, Programming Fundamentals
+Phillip Lopez, Associate lecturer, Advanced Data Mining Techniques, 4, Advanced Data Mining
+Catherine Perez, Senior lecturer, Advanced Cybersecurity, 2, Advanced Cybersecurity
+Louis Hernandez, Associate lecturer, Advanced Database Security, 1, Advanced Database Security
+Gerald Ross, Associate lecturer, Advanced Natural Language Generation, 1, Advanced NLG
+Jane Gray, Professor, Machine Learning Fundamentals, 1, Machine Learning
+Justin Nelson, Associate lecturer, Quantum Key Distribution, 4, Quantum Key Distribution
+Diane Rodriguez, Senior lecturer, Advanced Natural Language Understanding, 2, Advanced NLU
+Teresa Richardson, Associate lecturer, Advanced Topics in Computer Vision, 1, Advanced Computer Vision
+Judith Kelly, Associate lecturer, Advanced Cloud Computing Architectures, 1, Advanced Cloud Architectures
+Martha Ward, Professor, Cloud Computing Fundamentals, 1, Cloud Computing
+Jerry Patterson, Associate lecturer, Advanced Topics in Cryptography, 4, Advanced Cryptography
