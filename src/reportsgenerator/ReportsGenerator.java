@@ -18,6 +18,7 @@ public class ReportsGenerator {
     public static void main(String[] args) {
         try {
             DataBaseConnector db = new DataBaseConnector();
+            TxtReport txt = new TxtReport();
             db.lecturerReport();
         } catch (Exception e) {
             System.out.println(e);

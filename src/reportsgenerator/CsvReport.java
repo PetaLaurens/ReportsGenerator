@@ -12,10 +12,10 @@ import java.io.IOException;
  *
  * @author peta
  */
-public class TxtReport {
+public class CsvReport {
     
-    public void TxtFile(Class reportName) throws IOException {
-        BufferedWriter bw = new BufferedWriter(new FileWriter("report.txt", true));
+    public void CsvFile(Class reportName) throws IOException {
+        BufferedWriter bw = new BufferedWriter(new FileWriter("report.csv", true));
         bw.write(reportName.getName());
         bw.newLine();
         bw.close();
