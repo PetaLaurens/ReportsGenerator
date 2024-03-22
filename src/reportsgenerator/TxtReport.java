@@ -7,6 +7,7 @@ package reportsgenerator;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.SQLException;
 
 /**
  *
@@ -14,9 +15,9 @@ import java.io.IOException;
  */
 public class TxtReport {
     
-    public void TxtFile(Class reportName) throws IOException {
+    public void generateTxtReport(String reportName) throws IOException, SQLException {
         BufferedWriter bw = new BufferedWriter(new FileWriter("report.txt", true));
-        bw.write(reportName.getName());
+        bw.write(reportName);
         bw.newLine();
         bw.close();
     }

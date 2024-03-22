@@ -1,0 +1,102 @@
+Module Name, Course Name, Students Enrolled, Lecturer Name, Delivery Method
+Internet of Things Analytics, Mathematics, 1, Emily Brown, Room Maple
+Introduction to Programming, Information Technology, 2, Susan Taylor, Room Cedar
+Quantum Computing Fundamentals, Medical Technology, 4, Robert Martinez, Online
+Secure Software Engineering, Information Technology, 2, Sarah Anderson, Room Cedar
+Reinforcement Learning, Mathematics, 1, James Thomas, Room Maple
+Advanced Edge Computing, Hematology, 1, William Martinez, Room Elm
+Data Structures and Algorithms, Medical Technology, 4, Karen Robinson, Online
+Big Data Analytics, Telemedicine, 2, Charles Lee, Room Pine
+Quantum Cryptography, Mathematics, 1, Amanda Scott, Room Maple
+Advanced Game Development, Hematology, 1, Paul Green, Room Elm
+Advanced Cryptographic Protocols, Information Technology, 2, Michelle Adams, Room Birch
+Advanced Machine Learning, Medical Technology, 4, Donna Campbell, Online
+Advanced Computer Architecture, Hematology, 1, Kimberly Carter, Room Elm
+Advanced Information Retrieval, Information Technology, 2, Mark Murphy, Room Birch
+Advanced Quantum Computing, Medical Technology, 4, Betty Ramirez, Online
+Web Development Basics, Hematology, 1, Edward Rivera, Room Elm
+Compiler Design and Construction, Healthcare Delivery, 2, Amy Torres, Room Cedar
+Parallel Programming, Hematology, 1, Nicholas Collins, Room Elm
+Advanced Cybersecurity, Information Technology, 2, Samantha Diaz, Room Birch
+Advanced HCI, Medical Technology, 4, Ronald Stewart, Online
+Computer Ethics and Society, Telemedicine, 2, Erica Gray, Room Maple
+Human-Robot Interaction, Information Technology, 2, Gary Cooper, Room Birch
+Internet of Things Security, Medical Technology, 4, Martha Morales, Online
+Advanced Robotics Systems, Mathematics, 1, Debra Peterson, Room Maple
+Big Data Management, Telemedicine, 2, Billy Collins, Online
+Quantum Cryptanalysis, Mathematics, 1, Scott Cook, Room Maple
+Machine Learning Fundamentals, History, 1, Patrick Murphy, Room Oak
+Natural Language Processing, Information Technology, 2, Angela Kelly, Room Elm
+Computer Vision Applications, Mathematics, 1, Lori Diaz, Room Maple
+Advanced Virtual Reality, Hematology, 1, Carolyn Morris, Room Elm
+Information Security Management, Medical Technology, 4, Terry James, Room Birch
+Advanced Database Systems, Mathematics, 1, Sharon Bell, Room Maple
+Advanced Topics in Software Security, Hematology, 1, Julie Henderson, Room Elm
+Advanced Cloud Computing Security, Information Technology, 2, Arthur Nelson, Room Birch
+Computer Architecture, Mathematics, 1, Willie Evans, Online
+Advanced Topics in Machine Learning, Hematology, 1, Kathryn Howard, Room Elm
+Advanced Network Programming, Information Technology, 2, Kyle Bailey, Room Birch
+Advanced Quantum Cryptography, Medical Technology, 4, Jeanne Perez, Online
+Artificial Intelligence Basics, Marketing, 2, Gerald Coleman, Online
+Advanced Data Mining Techniques, Medical Technology, 4, Samuel Barnes, Online
+Advanced Natural Language Understanding, Information Technology, 2, Alice Mitchell, Room Birch
+Advanced Cyber-Physical Security, Mathematics, 1, Louis Reed, Room Maple
+Blockchain Applications, Medical Technology, 4, Dennis Flores, Online
+Virtual Reality Fundamentals, Mathematics, 1, Beverly Green, Room Cedar
+Advanced Database Security, Mathematics, 1, Amber Watson, Room Maple
+Advanced Network Security Management, Hematology, 1, Deborah Richardson, Room Elm
+Quantum Information Science, Mathematics, 1, Ashley Parker, Room Maple
+Advanced Natural Language Generation, Hematology, 1, Russell Gonzalez, Room Elm
+Computer Forensics, Information Technology, 2, Harold Mitchell, Room Elm
+Quantum Key Distribution, Medical Technology, 4, Joan Simmons, Online
+Advanced Network Security, Information Technology, 2, Diane Perez, Room Birch
+Cloud Security, Medical Technology, 4, Nicholas Edwards, Room Birch
+Advanced Topics in Computer Vision, Mathematics, 1, Sandra Turner, Room Maple
+Adversarial Machine Learning, Medical Technology, 4, Kathleen Coleman, Online
+Mobile Robotics, Hematology, 1, Alan Lopez, Room Cedar
+Advanced Cloud Computing Architectures, Hematology, 1, Gloria Ross, Room Elm
+Embedded Software Development, Information Technology, 2, Joyce Torres, Room Maple
+Advanced Topics in Cryptography, Medical Technology, 4, Shirley Hill, Online
+Quantum Machine Learning, Mathematics, 1, Clarence Peterson, Room Maple
+Computer Vision and Pattern Recognition, Telemedicine, 2, Marie Rivera, Room Elm
+Advanced Topics in Blockchain, Mathematics, 1, Chris Scott, Room Maple
+Advanced Edge Computing, Hematology, 1, Julia Patterson, Room Elm
+Computational Neuroscience Applications, Hematology, 1, Howard Cox, Room Elm
+Advanced Machine Learning, Medical Technology, 4, Tina Long, Online
+Advanced Quantum Computing, Medical Technology, 4, Jimmy Perry, Online
+Advanced Data Privacy, Information Technology, 2, Janet Powell, Room Birch
+Human-Robot Interaction, Information Technology, 2, Albert Baker, Room Birch
+Advanced Robotics Systems, Mathematics, 1, Rosemary Hughes, Room Maple
+Advanced Cloud Security, Medical Technology, 4, Earl Coleman, Online
+Advanced Virtual Reality, Hematology, 1, Janice Martinez, Room Elm
+Advanced Quantum Cryptography, Medical Technology, 4, Jeremy Campbell, Online
+Internet of Things Analytics, Mathematics, 1, Kathy Harris, Room Maple
+Deep Learning, Information Technology, 2, Keith King, Room Birch
+Advanced Cyber-Physical Security, Mathematics, 1, Amy Robinson, Room Maple
+Advanced Network Security Management, Hematology, 1, Judith Powell, Room Elm
+Advanced Game Development, Hematology, 1, Steven Coleman, Room Elm
+Advanced Internet of Things, Medical Technology, 4, Larry Flores, Online
+Advanced Information Retrieval, Information Technology, 2, Cheryl Ward, Room Birch
+Data Mining and Knowledge Discovery, Information Technology, 2, Ronald Richardson, Room Birch
+Advanced Natural Language Understanding, Mathematics, 1, Joyce Griffin, Room Maple
+Advanced HCI, Medical Technology, 4, Deborah Bryant, Online
+Advanced Topics in Edge Computing, Hematology, 1, Martha Ramirez, Room Elm
+Advanced Cloud Computing Architectures, Medical Technology, 4, Harold Barnes, Online
+Quantum Cryptanalysis, Mathematics, 1, Cynthia Rivera, Room Maple
+Cloud Computing Architectures, Information Technology, 2, Jeffrey Hernandez, Room Birch
+Advanced Quantum Machine Learning, Mathematics, 1, Teresa Powell, Room Maple
+Advanced Topics in Mobile Computing, Hematology, 1, Beverly James, Room Elm
+Advanced Topics in Software Security, Hematology, 1, Gary Taylor, Room Elm
+Introduction to Programming, Information Technology, 2, Gloria Green, Room Cedar
+Advanced Data Mining Techniques, Medical Technology, 4, Phillip Lopez, Online
+Advanced Cybersecurity, Information Technology, 2, Catherine Perez, Room Birch
+Advanced Database Security, Mathematics, 1, Louis Hernandez, Room Maple
+Advanced Natural Language Generation, Hematology, 1, Gerald Ross, Room Elm
+Machine Learning Fundamentals, History, 1, Jane Gray, Room Oak
+Quantum Key Distribution, Medical Technology, 4, Justin Nelson, Online
+Advanced Natural Language Understanding, Information Technology, 2, Diane Rodriguez, Room Birch
+Advanced Topics in Computer Vision, Mathematics, 1, Teresa Richardson, Room Maple
+Advanced Cloud Computing Architectures, Hematology, 1, Judith Kelly, Room Elm
+Cloud Computing Fundamentals, Mathematics, 1, Martha Ward, Online
+Advanced Topics in Cryptography, Medical Technology, 4, Jerry Patterson, Online
+

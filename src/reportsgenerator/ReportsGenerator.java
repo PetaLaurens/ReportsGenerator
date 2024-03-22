@@ -4,7 +4,6 @@
  */
 package reportsgenerator;
 
-import java.sql.SQLException;
 
 /**
  *
@@ -19,7 +18,8 @@ public class ReportsGenerator {
         try {
             DataBaseConnector db = new DataBaseConnector();
             TxtReport txt = new TxtReport();
-            db.lecturerReport();
+            txt.generateTxtReport(db.courseReport());
+            db.courseReport();
         } catch (Exception e) {
             System.out.println(e);
         }
