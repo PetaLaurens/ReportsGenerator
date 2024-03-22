@@ -1,0 +1,140 @@
+Student Name, Student ID, Course Name, Module Name, Module Completed, Grade, Modules to be Repeated
+Alexander Thomas, S009, Information Technology, Introduction to Programming, No, 60, 2
+Michael Hill, S031, Information Technology, Introduction to Programming, No, 60, 3
+Alexander Thomas, S009, Information Technology, Introduction to Programming, Yes, 87, 2
+Michael Hill, S031, Information Technology, Introduction to Programming, Yes, 87, 3
+Alice Johnson, S002, Hematology, Web Development Basics, Yes, 79, 1
+Olivia Rodriguez, S136, History, Machine Learning Fundamentals, Yes, 71, 0
+Olivia Rodriguez, S136, History, Machine Learning Fundamentals, Yes, 91, 0
+Oliver Anderson, S101, Telemedicine, Software Testing and QA, Yes, 89, 2
+Emma Gonzalez, S124, Telemedicine, Software Testing and QA, Yes, 89, 0
+Alice Johnson, S002, Hematology, Embedded Systems Design, Yes, 79, 1
+Sophia Brown, S074, Healthcare Delivery, Data Analysis and Visualization, Yes, 72, 1
+Sophia Evans, S132, Healthcare Delivery, Data Analysis and Visualization, Yes, 72, 0
+Sophia Brown, S074, Healthcare Delivery, Data Analysis and Visualization, Yes, 74, 1
+Sophia Evans, S132, Healthcare Delivery, Data Analysis and Visualization, Yes, 74, 0
+Alice Johnson, S002, Hematology, Blockchain Fundamentals, Yes, 79, 1
+Charlotte Hall, S134, Information Systems, Data Mining Techniques, No, 68, 1
+Sophia Brown, S074, Healthcare Delivery, Parallel and Distributed Computing, Yes, 72, 1
+Sophia Evans, S132, Healthcare Delivery, Parallel and Distributed Computing, Yes, 72, 0
+Sophia Brown, S074, Healthcare Delivery, Parallel and Distributed Computing, Yes, 74, 1
+Sophia Evans, S132, Healthcare Delivery, Parallel and Distributed Computing, Yes, 74, 0
+Alexander Thomas, S009, Information Technology, Computer Vision, No, 60, 2
+Michael Hill, S031, Information Technology, Computer Vision, No, 60, 3
+Alexander Thomas, S009, Information Technology, Computer Vision, Yes, 87, 2
+Michael Hill, S031, Information Technology, Computer Vision, Yes, 87, 3
+Oliver Anderson, S101, Telemedicine, Internet of Things (IoT), Yes, 89, 2
+Emma Gonzalez, S124, Telemedicine, Internet of Things (IoT), Yes, 89, 0
+Oliver Anderson, S101, Telemedicine, Big Data Analytics, Yes, 89, 2
+Emma Gonzalez, S124, Telemedicine, Big Data Analytics, Yes, 89, 0
+Sophia Brown, S074, Healthcare Delivery, Compiler Design and Construction, Yes, 72, 1
+Sophia Evans, S132, Healthcare Delivery, Compiler Design and Construction, Yes, 72, 0
+Sophia Brown, S074, Healthcare Delivery, Compiler Design and Construction, Yes, 74, 1
+Sophia Evans, S132, Healthcare Delivery, Compiler Design and Construction, Yes, 74, 0
+Oliver Anderson, S101, Telemedicine, Computer Ethics and Society, Yes, 89, 2
+Emma Gonzalez, S124, Telemedicine, Computer Ethics and Society, Yes, 89, 0
+Alexander Thomas, S009, Information Technology, Natural Language Processing, No, 60, 2
+Michael Hill, S031, Information Technology, Natural Language Processing, No, 60, 3
+Alexander Thomas, S009, Information Technology, Natural Language Processing, Yes, 87, 2
+Michael Hill, S031, Information Technology, Natural Language Processing, Yes, 87, 3
+Alice Johnson, S002, Hematology, Software Maintenance and Evolution, Yes, 79, 1
+Oliver Anderson, S101, Telemedicine, Computational Biology, Yes, 89, 2
+Emma Gonzalez, S124, Telemedicine, Computational Biology, Yes, 89, 0
+Alexander Thomas, S009, Information Technology, Computer Forensics, No, 60, 2
+Michael Hill, S031, Information Technology, Computer Forensics, No, 60, 3
+Alexander Thomas, S009, Information Technology, Computer Forensics, Yes, 87, 2
+Michael Hill, S031, Information Technology, Computer Forensics, Yes, 87, 3
+Alice Johnson, S002, Hematology, Mobile Robotics, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Embedded Software Development, No, 60, 2
+Michael Hill, S031, Information Technology, Embedded Software Development, No, 60, 3
+Alexander Thomas, S009, Information Technology, Embedded Software Development, Yes, 87, 2
+Michael Hill, S031, Information Technology, Embedded Software Development, Yes, 87, 3
+Oliver Anderson, S101, Telemedicine, Computer Vision and Pattern Recognition, Yes, 89, 2
+Emma Gonzalez, S124, Telemedicine, Computer Vision and Pattern Recognition, Yes, 89, 0
+Alexander Thomas, S009, Information Technology, Secure Software Engineering, No, 60, 2
+Michael Hill, S031, Information Technology, Secure Software Engineering, No, 60, 3
+Alexander Thomas, S009, Information Technology, Secure Software Engineering, Yes, 87, 2
+Michael Hill, S031, Information Technology, Secure Software Engineering, Yes, 87, 3
+Alice Johnson, S002, Hematology, Parallel Programming, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Human-Robot Interaction, No, 60, 2
+Michael Hill, S031, Information Technology, Human-Robot Interaction, No, 60, 3
+Alexander Thomas, S009, Information Technology, Human-Robot Interaction, Yes, 87, 2
+Michael Hill, S031, Information Technology, Human-Robot Interaction, Yes, 87, 3
+Oliver Anderson, S101, Telemedicine, Big Data Management, Yes, 89, 2
+Emma Gonzalez, S124, Telemedicine, Big Data Management, Yes, 89, 0
+Alice Johnson, S002, Hematology, Computational Neuroscience, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Deep Learning, No, 60, 2
+Michael Hill, S031, Information Technology, Deep Learning, No, 60, 3
+Alexander Thomas, S009, Information Technology, Deep Learning, Yes, 87, 2
+Michael Hill, S031, Information Technology, Deep Learning, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Algorithms, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Data Mining and Knowledge Discovery, No, 60, 2
+Michael Hill, S031, Information Technology, Data Mining and Knowledge Discovery, No, 60, 3
+Alexander Thomas, S009, Information Technology, Data Mining and Knowledge Discovery, Yes, 87, 2
+Michael Hill, S031, Information Technology, Data Mining and Knowledge Discovery, Yes, 87, 3
+Alice Johnson, S002, Hematology, Mobile Computing, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Cloud Computing Architectures, No, 60, 2
+Michael Hill, S031, Information Technology, Cloud Computing Architectures, No, 60, 3
+Alexander Thomas, S009, Information Technology, Cloud Computing Architectures, Yes, 87, 2
+Michael Hill, S031, Information Technology, Cloud Computing Architectures, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Computer Architecture, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Cybersecurity, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Cybersecurity, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Cybersecurity, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Cybersecurity, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Topics in Machine Learning, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Natural Language Understanding, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Natural Language Understanding, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Natural Language Understanding, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Natural Language Understanding, Yes, 87, 3
+Alice Johnson, S002, Hematology, Edge Computing, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Network Security, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Network Security, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Network Security, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Network Security, Yes, 87, 3
+Alice Johnson, S002, Hematology, Computational Neuroscience Applications, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Data Privacy, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Data Privacy, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Data Privacy, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Data Privacy, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Game Development, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Information Retrieval, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Information Retrieval, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Information Retrieval, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Information Retrieval, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Topics in Software Security, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Network Programming, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Network Programming, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Network Programming, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Network Programming, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Natural Language Generation, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Information Security Management, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Information Security Management, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Information Security Management, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Information Security Management, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Cloud Computing Architectures, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Cyber-Physical Systems, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Cyber-Physical Systems, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Cyber-Physical Systems, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Cyber-Physical Systems, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Edge Computing, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Cryptographic Protocols, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Cryptographic Protocols, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Cryptographic Protocols, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Cryptographic Protocols, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Virtual Reality, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Cloud Computing Security, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Cloud Computing Security, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Cloud Computing Security, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Cloud Computing Security, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Network Security Management, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Cloud Computing Platforms, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Cloud Computing Platforms, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Cloud Computing Platforms, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Cloud Computing Platforms, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Topics in Edge Computing, Yes, 79, 1
+Alexander Thomas, S009, Information Technology, Advanced Data Privacy, No, 60, 2
+Michael Hill, S031, Information Technology, Advanced Data Privacy, No, 60, 3
+Alexander Thomas, S009, Information Technology, Advanced Data Privacy, Yes, 87, 2
+Michael Hill, S031, Information Technology, Advanced Data Privacy, Yes, 87, 3
+Alice Johnson, S002, Hematology, Advanced Topics in Mobile Computing, Yes, 79, 1

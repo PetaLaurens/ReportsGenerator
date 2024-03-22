@@ -13,10 +13,10 @@ import java.sql.SQLException;
  *
  * @author peta
  */
-public class TxtReport {
+public class CsvReport {
     
-    public void generateTxtReport(String reportName) throws IOException, SQLException {
-        BufferedWriter bw = new BufferedWriter(new FileWriter("CollegeReport.txt", true));
+    public void generateCsvReport(String reportName) throws IOException, SQLException {
+        BufferedWriter bw = new BufferedWriter(new FileWriter("CollegeReport.csv", true));
         bw.write(reportName);
         bw.close();
     }

@@ -18,7 +18,9 @@ public class ReportsGenerator {
         try {
             DataBaseConnector db = new DataBaseConnector();
             TxtReport txt = new TxtReport();
+            CsvReport csv = new CsvReport();
             txt.generateTxtReport(db.lecturerReport());
+            csv.generateCsvReport(db.studentReport());
             db.courseReport();
         } catch (Exception e) {
             System.out.println(e);
