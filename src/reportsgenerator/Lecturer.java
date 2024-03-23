@@ -8,13 +8,12 @@ package reportsgenerator;
  *
  * @author peta
  */
-public class Admin extends Users {
+public class Lecturer extends Users {
     // Declaring fields for username and password to a fixed value
-    static String username = "admin";
-    static String password = "java";
+    static String username = "lecturer";
+    static String password = "teaching";
 
-    public Admin(String username, String password) {
+    public Lecturer(String username, String password) {
         super(username, password);
     }
-
 }

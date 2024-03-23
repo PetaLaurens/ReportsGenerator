@@ -26,8 +26,18 @@ public class ReportsGenerator {
             // Prints report in the terminal
             //System.out.println(db.courseReport());
             
-            UserInput ui = new UserInput();
-            ui.userMenu();
+            //UserInput ui = new UserInput();
+            //ui.userMainMenu();
+
+            
+            System.out.println(Admin.username);
+            System.out.println(Admin.password);
+            
+            System.out.println(Office.username);
+            System.out.println(Office.password);
+
+            System.out.println(Lecturer.username);
+            System.out.println(Lecturer.password);
         } catch (Exception e) {
             System.out.println(e);
         }
