@@ -35,7 +35,7 @@ public class ReportsGenerator {
             User lecturer = new User("lecturer", "teaching");
             
             //test
-            admin.generateReports();
+            admin.verifyLoginCredentials(admin);
             
         } catch (Exception e) {
             System.out.println(e);

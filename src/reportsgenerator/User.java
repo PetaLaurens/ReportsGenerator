@@ -40,8 +40,35 @@ public class User {
         this.password = password;
     }
     
-    public void verifyLoginCredentials() {
-        
+    public void verifyLoginCredentials(User user) {
+        // Declaring all necessary variables to be able to use them inside of other scopes
+        String correctUsername = user.username;
+        String correctPassword = user.password;
+        String inputUsername;
+        String inputPassword;
+
+        // Asking input from the user
+        Scanner userInput = new Scanner(System.in);
+
+        // Conditional statements for the user to login
+        for (int attemptsRemaining = 2; attemptsRemaining >= 0; attemptsRemaining--) {
+            System.out.println("Please enter your username: ");
+            inputUsername = userInput.nextLine();
+            System.out.println("Please enter your password: ");
+            inputPassword = userInput.nextLine();
+            // User will have three attempts to login with the right credentials
+            if (((!correctUsername.equals(inputUsername)) || (!correctPassword.equals(inputPassword))) && (attemptsRemaining > 0)) {
+                System.out.println("Incorrect. You have " + attemptsRemaining + " attempts remaining.");
+            // If the user fails to login, program will stop and the access will be denied
+            } else if (((!correctUsername.equals(inputUsername)) || (!correctPassword.equals(inputPassword))) && (attemptsRemaining == 0)) {
+                System.out.println("Access denied. You are now locked out of the system.");
+                System.exit(0);
+            // If the user logins with the right credentials, then the program will continue
+            } else if ((correctUsername.equals(inputUsername)) && (correctPassword.equals(inputPassword)) && (attemptsRemaining >= 0)) {
+                System.out.println("Welcome.");
+                attemptsRemaining += -2;
+            }
+        }
     }
     
     public void addUser() {

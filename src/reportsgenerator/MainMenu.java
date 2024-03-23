@@ -10,24 +10,7 @@ import java.util.Scanner;
  *
  * @author peta
  */
-public class UserInput {
+public class MainMenu {
 
 
-
-    public void userMainMenu() {
-        
-      
-    }
-
-    public void adminMenu() {
-
-    }
-
-    public void officeMenu() {
-
-    }
-
-    public void lecturerMenu() {
-
-    }
 }
