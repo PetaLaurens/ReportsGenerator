@@ -28,16 +28,15 @@ public class ReportsGenerator {
             
             //UserInput ui = new UserInput();
             //ui.userMainMenu();
-
             
-            System.out.println(Admin.username);
-            System.out.println(Admin.password);
+            // Creating the three different users and declaring its usernames and passwords
+            User admin = new User("admin", "java");
+            User office = new User("office", "paperwork");
+            User lecturer = new User("lecturer", "teaching");
             
-            System.out.println(Office.username);
-            System.out.println(Office.password);
-
-            System.out.println(Lecturer.username);
-            System.out.println(Lecturer.password);
+            //test
+            admin.generateLecturerReport();
+            
         } catch (Exception e) {
             System.out.println(e);
         }
