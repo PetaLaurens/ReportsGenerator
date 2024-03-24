@@ -6,6 +6,7 @@ package reportsgenerator;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -40,6 +41,10 @@ public class User {
         this.password = password;
     }
     
+    // Creates the usersList empty array outside of the methods scopes
+    public static ArrayList<User> usersList = new ArrayList<>();
+    
+    // Different methods that will be accessible to different users
     public void verifyLoginCredentials(User user) {
         // Declaring all necessary variables to be able to use them inside of other scopes
         String correctUsername = user.username;
@@ -47,7 +52,7 @@ public class User {
         String inputUsername;
         String inputPassword;
 
-        // Asking input from the user
+        // Asking the user for input
         Scanner userInput = new Scanner(System.in);
 
         // Conditional statements for the user to login
@@ -72,7 +77,38 @@ public class User {
     }
     
     public void addUser() {
+        // Declaring all necessary variables to be able to use them inside of other scopes
+        String newUsername;
+        String newPassword;
         
+        // Asking the user for input
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Please enter the username for the new user: ");
+        newUsername = userInput.nextLine();
+        System.out.println("Please enter the password for the new user: ");
+        newPassword = userInput.nextLine();
+        
+        // Creates a new User object
+        User newUser = new User(newUsername, newPassword);
+        
+        usersList.add(newUser);
+        
+        // Displaying the results for the admin
+        System.out.println("");
+        System.out.println("The new user has been succesfully created with the below credentials.");
+        System.out.println("Username: " +  newUsername);
+        System.out.println("Password: " +  newPassword);
+        
+        // Displaying the existent users
+        System.out.println("");
+        System.out.println("See below the current list of users:");
+        System.out.println("");
+        
+        // Code to search and display the name of each of the users in the usersList array
+        for (User user : usersList) {
+            System.out.println("User: " + user.username + " | Password: " + user.password);
+            }
+
     }
     
     public void modifyUser() {

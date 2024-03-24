@@ -4,6 +4,8 @@
  */
 package reportsgenerator;
 
+import static reportsgenerator.User.usersList;
+
 
 /**
  *
@@ -33,9 +35,15 @@ public class ReportsGenerator {
             User admin = new User("admin", "java");
             User office = new User("office", "paperwork");
             User lecturer = new User("lecturer", "teaching");
+
+            // Declares an array, called usersList, to store the above User objects 
+            usersList.add(admin);
+            usersList.add(office);
+            usersList.add(lecturer);
             
             //test
-            admin.verifyLoginCredentials(admin);
+            admin.addUser();
+
             
         } catch (Exception e) {
             System.out.println(e);
