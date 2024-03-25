@@ -7,6 +7,7 @@ package reportsgenerator;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -44,7 +45,7 @@ public class User {
     // Creates the usersList empty array outside of the methods scopes
     public static ArrayList<User> usersList = new ArrayList<>();
     
-    // Different methods that will be accessible to different users
+    // Declaring the different methods that will be accessible to different users
     public void verifyLoginCredentials(User user) {
         // Declaring all necessary variables to be able to use them inside of other scopes
         String correctUsername = user.username;
@@ -116,7 +117,46 @@ public class User {
     }
     
     public void deleteUser() {
+        // Declaring all necessary variables to be able to use them inside of other scopes
+        String userToBeDeleted;
         
+        // Asking the user for input
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Please enter the username of the user you want to delete: ");
+        userToBeDeleted = userInput.nextLine();
+        
+        // Boolean to check if the user is found
+        boolean userFound = false;
+        
+        // Using Iterator to remove the chosen user
+        Iterator<User> iterator = usersList.iterator();
+        while (iterator.hasNext()) {
+            User user = iterator.next();
+            if (user.username.equals(userToBeDeleted)) {
+                iterator.remove(); // Safely remove the user
+                userFound = true;
+                // Using break as there is no need to continue once the user is found and deleted
+                break; 
+            }
+        }
+        
+        // If the user is found, it will be deleted, otherwise, the program will print a useful message for the admin
+        System.out.println("");
+        if (userFound) {
+            System.out.println("The user " + userToBeDeleted + " has been removed.");
+        } else {
+            System.out.println("User " + userToBeDeleted + " not found.");
+        }
+        
+        // Displaying the existent users
+        System.out.println("");
+        System.out.println("See below the current list of users:");
+        System.out.println("");
+        
+        // Code to search and display the name of each of the users in the usersList array
+        for (User user : usersList) {
+            System.out.println("User: " + user.username + " | Password: " + user.password);
+            }
     }
     
     public void changeUsername() {
