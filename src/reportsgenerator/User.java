@@ -113,7 +113,51 @@ public class User {
     }
     
     public void modifyUser() {
+        // Declaring all necessary variables to be able to use them inside of other scopes
+        String userToBeModified;
         
+        // Asking the user for input
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Please enter the username of the user you want to modify: ");
+        userToBeModified = userInput.nextLine();
+        
+        // Boolean to check if the user is found
+        boolean userFound = false;
+        // Using Iterator to modify the chosen user
+        
+        // Using enhanced for loop to modify the chosen user
+        for (User user : usersList) {
+            // If the user is found, it will be modified, otherwise, the program will print a useful message for the admin
+            if (user.username.equals(userToBeModified)) {
+                System.out.println("Please enter the new username for user " + userToBeModified + ": ");
+                String newUsername = userInput.nextLine();
+                System.out.println("Please enter the new password for user " + userToBeModified + ": ");
+                String newPassword = userInput.nextLine();
+                user.username = newUsername;
+                user.password = newPassword;
+                userFound = true;
+                // Using break as there is no need to continue once the user is found and modified
+                break; 
+            }
+        }
+        
+        // Message to inform the admin if the chosen user has been modified or not
+        System.out.println("");
+        if (userFound) {
+            System.out.println("The user " + userToBeModified + " has been modified.");
+        } else {
+            System.out.println("User " + userToBeModified + " not found.");
+        }
+        
+        // Displaying the existent users
+        System.out.println("");
+        System.out.println("See below the current list of users:");
+        System.out.println("");
+        
+        // Code to search and display the name of each of the users in the usersList array
+        for (User user : usersList) {
+            System.out.println("User: " + user.username + " | Password: " + user.password);
+            }
     }
     
     public void deleteUser() {
@@ -132,15 +176,16 @@ public class User {
         Iterator<User> iterator = usersList.iterator();
         while (iterator.hasNext()) {
             User user = iterator.next();
+            // If the user is found, it will be deleted, otherwise, the program will print a useful message for the admin
             if (user.username.equals(userToBeDeleted)) {
-                iterator.remove(); // Safely remove the user
+                iterator.remove();
                 userFound = true;
                 // Using break as there is no need to continue once the user is found and deleted
                 break; 
             }
         }
         
-        // If the user is found, it will be deleted, otherwise, the program will print a useful message for the admin
+        // Message to inform the admin if the chosen user has been removed or not
         System.out.println("");
         if (userFound) {
             System.out.println("The user " + userToBeDeleted + " has been removed.");

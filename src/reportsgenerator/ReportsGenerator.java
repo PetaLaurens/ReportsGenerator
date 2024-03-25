@@ -42,7 +42,7 @@ public class ReportsGenerator {
             usersList.add(lecturer);
             
             //test
-            admin.deleteUser();
+            admin.modifyUser();
 
             
         } catch (Exception e) {
