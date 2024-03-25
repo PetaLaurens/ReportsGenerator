@@ -77,6 +77,7 @@ public class User {
         }
     }
     
+    // Method to add a new user
     public void addUser() {
         // Declaring all necessary variables to be able to use them inside of other scopes
         String newUsername;
@@ -107,12 +108,13 @@ public class User {
         
         // Code to search and display the name of each of the users in the usersList array
         for (User user : usersList) {
-            System.out.println("User: " + user.username + " | Password: " + user.password);
+            System.out.println("User: " + user.username);
             }
 
     }
     
-    public void modifyUser() {
+    // Method to modify any user
+    public void modifyAnyUser() {
         // Declaring all necessary variables to be able to use them inside of other scopes
         String userToBeModified;
         
@@ -156,10 +158,11 @@ public class User {
         
         // Code to search and display the name of each of the users in the usersList array
         for (User user : usersList) {
-            System.out.println("User: " + user.username + " | Password: " + user.password);
+            System.out.println("User: " + user.username);
             }
     }
     
+    // Method to delete a user
     public void deleteUser() {
         // Declaring all necessary variables to be able to use them inside of other scopes
         String userToBeDeleted;
@@ -200,18 +203,62 @@ public class User {
         
         // Code to search and display the name of each of the users in the usersList array
         for (User user : usersList) {
-            System.out.println("User: " + user.username + " | Password: " + user.password);
+            System.out.println("User: " + user.username);
             }
     }
     
-    public void changeUsername() {
+    // Method for the user to change its own username
+    public void changeItsOwnUsername() {
+        // Declaring all necessary variables to be able to use them inside of other scopes
+        String currentUsername;
+        String newUsername;
+        
+        // Asking the user for input
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Please enter your current username: ");
+        currentUsername = userInput.nextLine();
+        
+        // Boolean to check if the user is found
+        boolean userFound = false;
+        
+        // Using enhanced for loop to modify the chosen user
+        for (User user : usersList) {
+            // If the user is found, it will be modified, otherwise, the program will print a useful message for the admin
+            if (user.username.equals(currentUsername)) {
+                System.out.println("Please enter your new username: ");
+                newUsername = userInput.nextLine();
+                user.username = newUsername;
+                userFound = true;
+                // Using break as there is no need to continue once the user is found and modified
+                break; 
+            }
+        }
+        
+        // Message to inform the admin if the chosen user has been modified or not
+        System.out.println("");
+        if (userFound) {
+            System.out.println("The user " + currentUsername + " has been modified.");
+        } else {
+            System.out.println("User " + currentUsername + " not found.");
+        }
+        
+        // Displaying the existent users
+        System.out.println("");
+        System.out.println("See below the current list of users:");
+        System.out.println("");
+        
+        // Code to search and display the name of each of the users in the usersList array
+        for (User user : usersList) {
+            System.out.println("User: " + user.username);
+            }
+    }
+    
+    // Method for the user to change its own password
+    public void changeItsOwnPassword() {
         
     }
     
-    public void changePassword() {
-        
-    }
-    
+    // Method to generate the different reports in different formats
     public void generateReports() throws SQLException, IOException {
         // Declaring the necessary variables to be able to use them inside of other scopes
         int selectedOperation;
@@ -319,7 +366,7 @@ public class User {
         }
         }
     
-    
+    //Method to generate the Lecturer report
     public void generateLecturerReport() throws SQLException, IOException {
         // Declaring the necessary variables to be able to use them inside of other scopes
         int selectedOperation;
