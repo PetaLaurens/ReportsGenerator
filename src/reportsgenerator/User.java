@@ -71,6 +71,7 @@ public class User {
                 System.exit(0);
             // If the user logins with the right credentials, then the program will continue
             } else if ((correctUsername.equals(inputUsername)) && (correctPassword.equals(inputPassword)) && (attemptsRemaining >= 0)) {
+                System.out.println("");
                 System.out.println("Welcome.");
                 attemptsRemaining += -2;
             }
@@ -156,7 +157,7 @@ public class User {
         System.out.println("See below the current list of users:");
         System.out.println("");
         
-        // Code to search and display the name of each of the users in the usersList array
+        // Enhanced for loop to display the name of each of the users in the usersList array
         for (User user : usersList) {
             System.out.println("User: " + user.username);
             }
@@ -207,7 +208,7 @@ public class User {
             }
     }
     
-    // Method for the user to change its own username
+    // Method for the user to change its own username WRONG, TO AMEND
     public void changeItsOwnUsername() {
         // Declaring all necessary variables to be able to use them inside of other scopes
         String currentUsername;
@@ -241,19 +242,9 @@ public class User {
         } else {
             System.out.println("Username " + currentUsername + " not found.");
         }
-        
-        // Displaying the existent users
-        System.out.println("");
-        System.out.println("See below the current list of users:");
-        System.out.println("");
-        
-        // Code to search and display the name of each of the users in the usersList array
-        for (User user : usersList) {
-            System.out.println("User: " + user.username);
-            }
     }
     
-    // Method for the user to change its own password
+    // Method for the user to change its own password WEONG, TO AMEND
     public void changeItsOwnPassword() {
         // Declaring all necessary variables to be able to use them inside of other scopes
         String currentPassword;
@@ -261,7 +252,7 @@ public class User {
         
         // Asking the user for input
         Scanner userInput = new Scanner(System.in);
-        System.out.println("Please enter your username: ");
+        System.out.println("Please enter your current password: ");
         currentPassword = userInput.nextLine();
         
         // Boolean to check if the password is found
@@ -285,18 +276,8 @@ public class User {
         if (passwordFound) {
             System.out.println("Your password has been succesfully modified.");
         } else {
-            System.out.println("Password not found.");
+            System.out.println("Incorrect password.");
         }
-        
-        // Displaying the existent users
-        System.out.println("");
-        System.out.println("See below the current list of users:");
-        System.out.println("");
-        
-        // Code to search and display the name of each of the users in the usersList array
-        for (User user : usersList) {
-            System.out.println("User: " + user.username);
-            }
     }
     
     // Method to generate the different reports in different formats
