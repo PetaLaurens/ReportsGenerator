@@ -10,9 +10,8 @@ package reportsgenerator;
  */
 public class ReportsGenerator {
 
-    /**
-     * @param args the command line arguments
-     */
+    // GitHub repository: https://github.com/PetaLaurens/ReportsGenerator
+    
     public static void main(String[] args) {
         // Running the main menu of the program
         try {
