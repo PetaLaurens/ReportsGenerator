@@ -218,28 +218,28 @@ public class User {
         System.out.println("Please enter your current username: ");
         currentUsername = userInput.nextLine();
         
-        // Boolean to check if the user is found
-        boolean userFound = false;
+        // Boolean to check if the username is found
+        boolean usernameFound = false;
         
-        // Using enhanced for loop to modify the chosen user
+        // Using enhanced for loop to modify the chosen username
         for (User user : usersList) {
-            // If the user is found, it will be modified, otherwise, the program will print a useful message for the admin
+            // If the username is found, it will be modified, otherwise, the program will print a useful message for the user
             if (user.username.equals(currentUsername)) {
                 System.out.println("Please enter your new username: ");
                 newUsername = userInput.nextLine();
                 user.username = newUsername;
-                userFound = true;
-                // Using break as there is no need to continue once the user is found and modified
+                usernameFound = true;
+                // Using break as there is no need to continue once the username is found and modified
                 break; 
             }
         }
         
-        // Message to inform the admin if the chosen user has been modified or not
+        // Message to inform the user if the username has been modified or not
         System.out.println("");
-        if (userFound) {
-            System.out.println("The user " + currentUsername + " has been modified.");
+        if (usernameFound) {
+            System.out.println("The username " + currentUsername + " has been modified.");
         } else {
-            System.out.println("User " + currentUsername + " not found.");
+            System.out.println("Username " + currentUsername + " not found.");
         }
         
         // Displaying the existent users
@@ -255,7 +255,48 @@ public class User {
     
     // Method for the user to change its own password
     public void changeItsOwnPassword() {
+        // Declaring all necessary variables to be able to use them inside of other scopes
+        String currentPassword;
+        String newPassword;
         
+        // Asking the user for input
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Please enter your username: ");
+        currentPassword = userInput.nextLine();
+        
+        // Boolean to check if the password is found
+        boolean passwordFound = false;
+        
+        // Using enhanced for loop to modify the chosen password
+        for (User user : usersList) {
+            // If the password is found, it will be modified, otherwise, the program will print a useful message for the user
+            if (user.password.equals(currentPassword)) {
+                System.out.println("Please enter your new password: ");
+                newPassword = userInput.nextLine();
+                user.password = newPassword;
+                passwordFound = true;
+                // Using break as there is no need to continue once the user is found and modified
+                break; 
+            }
+        }
+        
+        // Message to inform the user if the password has been modified or not
+        System.out.println("");
+        if (passwordFound) {
+            System.out.println("Your password has been succesfully modified.");
+        } else {
+            System.out.println("Password not found.");
+        }
+        
+        // Displaying the existent users
+        System.out.println("");
+        System.out.println("See below the current list of users:");
+        System.out.println("");
+        
+        // Code to search and display the name of each of the users in the usersList array
+        for (User user : usersList) {
+            System.out.println("User: " + user.username);
+            }
     }
     
     // Method to generate the different reports in different formats

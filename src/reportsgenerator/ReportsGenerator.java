@@ -42,7 +42,7 @@ public class ReportsGenerator {
             usersList.add(lecturer);
             
             //test
-            admin.changeItsOwnUsername();
+            admin.changeItsOwnPassword();
 
             
         } catch (Exception e) {
