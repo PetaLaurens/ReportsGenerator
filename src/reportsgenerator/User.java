@@ -94,6 +94,7 @@ public class User {
         // Creates a new User object
         User newUser = new User(newUsername, newPassword);
         
+        // Adding the new user to the usersList array
         usersList.add(newUser);
         
         // Displaying the results for the admin
@@ -107,7 +108,7 @@ public class User {
         System.out.println("See below the current list of users:");
         System.out.println("");
         
-        // Code to search and display the name of each of the users in the usersList array
+        // Enhanced for loop to display the name of each of the users in the usersList array
         for (User user : usersList) {
             System.out.println("User: " + user.username);
             }
@@ -126,7 +127,6 @@ public class User {
         
         // Boolean to check if the user is found
         boolean userFound = false;
-        // Using Iterator to modify the chosen user
         
         // Using enhanced for loop to modify the chosen user
         for (User user : usersList) {
@@ -202,82 +202,70 @@ public class User {
         System.out.println("See below the current list of users:");
         System.out.println("");
         
-        // Code to search and display the name of each of the users in the usersList array
+        // Enhanced for loop to display the name of each of the users in the usersList array
         for (User user : usersList) {
             System.out.println("User: " + user.username);
             }
     }
     
-    // Method for the user to change its own username WRONG, TO AMEND
-    public void changeItsOwnUsername() {
-        // Declaring all necessary variables to be able to use them inside of other scopes
-        String currentUsername;
-        String newUsername;
-        
-        // Asking the user for input
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("Please enter your current username: ");
-        currentUsername = userInput.nextLine();
-        
-        // Boolean to check if the username is found
-        boolean usernameFound = false;
-        
-        // Using enhanced for loop to modify the chosen username
-        for (User user : usersList) {
-            // If the username is found, it will be modified, otherwise, the program will print a useful message for the user
-            if (user.username.equals(currentUsername)) {
-                System.out.println("Please enter your new username: ");
-                newUsername = userInput.nextLine();
-                user.username = newUsername;
-                usernameFound = true;
-                // Using break as there is no need to continue once the username is found and modified
-                break; 
-            }
-        }
-        
-        // Message to inform the user if the username has been modified or not
-        System.out.println("");
-        if (usernameFound) {
-            System.out.println("The username " + currentUsername + " has been modified.");
-        } else {
-            System.out.println("Username " + currentUsername + " not found.");
-        }
+    // Method to change username
+    public void changeUsername(String newUsername) {
+        this.username = newUsername;
     }
     
-    // Method for the user to change its own password WEONG, TO AMEND
-    public void changeItsOwnPassword() {
-        // Declaring all necessary variables to be able to use them inside of other scopes
-        String currentPassword;
-        String newPassword;
-        
+    // Method for the user to change its own username
+    public void changeItsOwnUsername(User currentUser) {
         // Asking the user for input
         Scanner userInput = new Scanner(System.in);
-        System.out.println("Please enter your current password: ");
-        currentPassword = userInput.nextLine();
-        
-        // Boolean to check if the password is found
-        boolean passwordFound = false;
-        
-        // Using enhanced for loop to modify the chosen password
-        for (User user : usersList) {
-            // If the password is found, it will be modified, otherwise, the program will print a useful message for the user
-            if (user.password.equals(currentPassword)) {
-                System.out.println("Please enter your new password: ");
-                newPassword = userInput.nextLine();
-                user.password = newPassword;
-                passwordFound = true;
-                // Using break as there is no need to continue once the user is found and modified
-                break; 
-            }
-        }
-        
-        // Message to inform the user if the password has been modified or not
+        System.out.println("Please enter your new username: ");
+        String newUsername = userInput.nextLine();
+
+        // Change the username
+        currentUser.changeUsername(newUsername);
+
+        // Message to inform the user that the username has been modified
         System.out.println("");
-        if (passwordFound) {
-            System.out.println("Your password has been succesfully modified.");
-        } else {
-            System.out.println("Incorrect password.");
-        }
+        System.out.println("Your username has been modified to: " + currentUser.username);
+        
+        // Displaying the existent users
+        System.out.println("");
+        System.out.println("See below the current list of users:");
+        System.out.println("");
+        
+        // Enhanced for loop to display the name of each of the users in the usersList array
+        for (User user : usersList) {
+            System.out.println("User: " + user.username);
+            }
+    }
+    
+    // Method to change password
+    public void changePassword(String newPassword) {
+        this.password = newPassword;
+    }
+    
+    // Method for the user to change its own password
+    public void changeItsOwnPassword(User currentUser) {
+        // Asking the user for input
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Please enter your new password: ");
+        String newPassword = userInput.nextLine();
+
+        // Change the password
+        currentUser.changePassword(newPassword);
+
+        // Message to inform the user that the password has been modified
+        System.out.println("");
+        System.out.println("Your password has been modified to: " + currentUser.password);
+        
+        // Displaying the existent users
+        System.out.println("");
+        System.out.println("See below the current list of users:");
+        System.out.println("");
+        
+        // Enhanced for loop to display the name of each of the users in the usersList array
+        for (User user : usersList) {
+            System.out.println("User: " + user.username);
+            }
     }
     
     // Method to generate the different reports in different formats
@@ -300,7 +288,6 @@ public class User {
         // If the user enters wrong input, the program will print a helpful message
         if ((!selectedOperationToString.matches("^[0-9]\\d*$")) || (selectedOperation < 1) || (selectedOperation > 4)) {
             System.out.println("You have not entered the right character, please start again.");
-            
         // ********** COURSE REPORT **********
         // If the user wants to generate the Course report, I will ask for information about the file format
         } else if (selectedOperation == 1) {
@@ -327,7 +314,7 @@ public class User {
                 CsvReport csv = new CsvReport();
                 csv.generateCsvReport(db.courseReport());
                 System.out.println("The Course report in csv format has now been generated.");
-            // If the user enters 3, the program will output the course report in the terminal
+            // If the user enters 3, the program will output the course report in the console
             } else if (selectedOperation == 3) {
                 System.out.println("Please see the Course Report below.");
                 System.out.println("");
@@ -364,7 +351,7 @@ public class User {
                 CsvReport csv = new CsvReport();
                 csv.generateCsvReport(db.studentReport());
                 System.out.println("The Student report in csv format has now been generated.");
-            // If the user enters 3, the program will output the student report in the terminal
+            // If the user enters 3, the program will output the student report in the console
             } else if (selectedOperation == 3) {
                 System.out.println("Please see the Student Report below.");
                 System.out.println("");
@@ -375,12 +362,10 @@ public class User {
                 System.out.println("See you next time!");
                 System.exit(0);
             }
-            
         // ********** LECTURER REPORT **********
         // If the user wants to generate the Lecturer report, I will call the method to generate the lecturer report
         } else if (selectedOperation == 3) {
             generateLecturerReport();
-            
         // If the user enters 4, the program will exit
         } else if (selectedOperation == 4) {
             System.out.println("See you next time!");
@@ -388,7 +373,7 @@ public class User {
         }
         }
     
-    //Method to generate the Lecturer report
+    // Method to generate the Lecturer report
     public void generateLecturerReport() throws SQLException, IOException {
         // Declaring the necessary variables to be able to use them inside of other scopes
         int selectedOperation;
@@ -420,7 +405,7 @@ public class User {
             CsvReport csv = new CsvReport();
             csv.generateCsvReport(db.lecturerReport());
             System.out.println("The Lecturer report in csv format has now been generated.");
-        // If the user enters 3, the program will output the lecturer report in the terminal
+        // If the user enters 3, the program will output the lecturer report in the console
         } else if (selectedOperation == 3) {
             System.out.println("Please see the Lecturer Report below.");
             System.out.println("");

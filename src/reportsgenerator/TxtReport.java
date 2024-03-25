@@ -16,6 +16,7 @@ import java.sql.SQLException;
 public class TxtReport {
     
     public void generateTxtReport(String reportName) throws IOException, SQLException {
+        // Using BufferedWriter to write the report in txt format
         BufferedWriter bw = new BufferedWriter(new FileWriter("Report.txt", true));
         bw.write(reportName);
         bw.close();

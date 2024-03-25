@@ -16,6 +16,7 @@ import java.sql.SQLException;
 public class CsvReport {
     
     public void generateCsvReport(String reportName) throws IOException, SQLException {
+        // Using BufferedWriter to write the report in csv format
         BufferedWriter bw = new BufferedWriter(new FileWriter("Report.csv", true));
         bw.write(reportName);
         bw.close();

@@ -13,7 +13,12 @@ public class ReportsGenerator {
     // GitHub repository: https://github.com/PetaLaurens/ReportsGenerator
     
     public static void main(String[] args) {
-        // Running the main menu of the program
+        // For this program, I have created three users with the below credentials
+        // Username: admin | Password: java
+        // Username: office | Password: paperwork
+        // Username: lecturer | Password: teaching
+        
+        // Calling the MainMenu method to run the program
         try {
             MainMenu main = new MainMenu();
             main.mainMenu();

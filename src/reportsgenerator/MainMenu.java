@@ -49,43 +49,35 @@ public class MainMenu {
             // ********** MENU FOR THE ADMIN **********
             } else if (selectedOperation == 1) {
                 System.out.println("Hello Admin. Please enter an option.");
-                System.out.println("1 - To add, modify and delete other users");
-                System.out.println("2 - To change your own username and password");
-                System.out.println("3 - To Exit");
+                System.out.println("1 - To add a user");
+                System.out.println("2 - To modify a user");
+                System.out.println("3 - To delete a user");
+                System.out.println("4 - To change your username");
+                System.out.println("5 - To change your password");
+                System.out.println("6 - To Exit");
                 selectedOperation = Integer.parseInt(userInput.nextLine());
                 // Parsing the selected operation to string, to be able to check regex condition below
                 selectedOperationToString = Integer.toString(selectedOperation);
                 // If the user enters wrong input, the program will print a helpful message
-                if ((!selectedOperationToString.matches("^[0-9]\\d*$")) || (selectedOperation < 1) || (selectedOperation > 4)) {
+                if ((!selectedOperationToString.matches("^[0-9]\\d*$")) || (selectedOperation < 1) || (selectedOperation > 6)) {
                     System.out.println("You have not entered the right character, please start again.");
-                // Option 1 for the admin to modify any user
+                // Option 1 for the admin to add any user
                 } else if (selectedOperation == 1) {
-                    admin.modifyAnyUser();
-                // Option 2 for the admin to modify its username or password
+                    admin.addUser();
+                // Option 2 for the admin to modify any user
                 } else if (selectedOperation == 2) {
-                    System.out.println("Please enter an option.");
-                    System.out.println("1 - To change your username");
-                    System.out.println("2 - To change your password");
-                    System.out.println("3 - To Exit");
-                    selectedOperation = Integer.parseInt(userInput.nextLine());
-                    // Parsing the selected operation to string, to be able to check regex condition below
-                    selectedOperationToString = Integer.toString(selectedOperation);
-                    // If the user enters wrong input, the program will print a helpful message
-                    if ((!selectedOperationToString.matches("^[0-9]\\d*$")) || (selectedOperation < 1) || (selectedOperation > 4)) {
-                        System.out.println("You have not entered the right character, please start again.");
-                    // Option 1 for the admin to modify its username
-                    } else if (selectedOperation == 1) {
-                        admin.changeItsOwnUsername();
-                    // Option 2 for the admin to modify its password
-                    } else if (selectedOperation == 2) {
-                        admin.changeItsOwnPassword();
-                    // Option 3 to exit the program
-                    } else if (selectedOperation == 3) {
-                        System.out.println("See you next time!");
-                        System.exit(0);
-                    }
-                // Option 3 to exit the program
+                    admin.modifyAnyUser();
+                // Option 3 for the admin to delete any user
                 } else if (selectedOperation == 3) {
+                    admin.deleteUser();
+                // Option 4 for the admin to modify its username
+                } else if (selectedOperation == 4) {
+                    admin.changeItsOwnUsername(admin);
+                // Option 5 for the admin to modify its password
+                } else if (selectedOperation == 5) {
+                    admin.changeItsOwnPassword(admin);
+                // Option 6 to exit the program
+                } else if (selectedOperation == 6) {
                     System.out.println("See you next time!");
                     System.exit(0);
                 }
@@ -109,10 +101,10 @@ public class MainMenu {
                     office.generateReports();
                 // Option 2 for the office to modify its username
                 } else if (selectedOperation == 2) {
-                    office.changeItsOwnUsername();
+                    office.changeItsOwnUsername(office);
                 // Option 3 for the office to modify its password
                 } else if (selectedOperation == 3) {
-                    office.changeItsOwnPassword();
+                    office.changeItsOwnPassword(office);
                 // Option 4 to exit the program
                 } else if (selectedOperation == 4) {
                     System.out.println("See you next time!");
@@ -138,10 +130,10 @@ public class MainMenu {
                     lecturer.generateLecturerReport();
                 // Option 2 for the lecturer to modify its username
                 } else if (selectedOperation == 2) {
-                    office.changeItsOwnUsername();
+                    lecturer.changeItsOwnUsername(lecturer);
                 // Option 3 for the lecturer to modify its password
                 } else if (selectedOperation == 3) {
-                    office.changeItsOwnPassword();
+                    lecturer.changeItsOwnPassword(lecturer);
                 // Option 4 to exit the program
                 } else if (selectedOperation == 4) {
                     System.out.println("See you next time!");
@@ -155,5 +147,5 @@ public class MainMenu {
         } catch (Exception e) {
             System.out.println(e);
         }
-}
-}
+    }
+    }
