@@ -16,7 +16,7 @@ import java.sql.ResultSet;
  */
 public class DataBaseConnector {
     
-    private final String DB_URL = "jdbc:mysql://localhost:3306/Reports";
+    private final String DB_URL = "jdbc:mysql://localhost/Reports";
     private final String USER = "integrated_CA";
     private final String PASSWORD = "integrated_CA";
     
