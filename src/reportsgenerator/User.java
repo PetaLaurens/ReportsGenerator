@@ -45,6 +45,18 @@ public class User {
     // Creates the usersList empty array outside of the methods scopes
     public static ArrayList<User> usersList = new ArrayList<>();
     
+    // Displays the current list of users
+    public static void DisplayListOfUsers() {
+        // Displaying the existent users
+        System.out.println("");
+        System.out.println("See below the current list of users:");
+        
+        // Enhanced for loop to display the name of each of the users in the usersList array
+        for (User user : usersList) {
+            System.out.println("- " + user.username);
+            }
+    }
+    
     // Declaring the different methods that will be accessible to different users
     public void verifyLoginCredentials(User user) {
         // Declaring all necessary variables to be able to use them inside of other scopes
@@ -103,15 +115,8 @@ public class User {
         System.out.println("Username: " +  newUsername);
         System.out.println("Password: " +  newPassword);
         
-        // Displaying the existent users
-        System.out.println("");
-        System.out.println("See below the current list of users:");
-        System.out.println("");
-        
-        // Enhanced for loop to display the name of each of the users in the usersList array
-        for (User user : usersList) {
-            System.out.println("User: " + user.username);
-            }
+        // Calling method to display all users
+        DisplayListOfUsers();
 
     }
     
@@ -152,15 +157,8 @@ public class User {
             System.out.println("User " + userToBeModified + " not found.");
         }
         
-        // Displaying the existent users
-        System.out.println("");
-        System.out.println("See below the current list of users:");
-        System.out.println("");
-        
-        // Enhanced for loop to display the name of each of the users in the usersList array
-        for (User user : usersList) {
-            System.out.println("User: " + user.username);
-            }
+        // Calling method to display all users
+        DisplayListOfUsers();
     }
     
     // Method to delete a user
@@ -197,15 +195,8 @@ public class User {
             System.out.println("User " + userToBeDeleted + " not found.");
         }
         
-        // Displaying the existent users
-        System.out.println("");
-        System.out.println("See below the current list of users:");
-        System.out.println("");
-        
-        // Enhanced for loop to display the name of each of the users in the usersList array
-        for (User user : usersList) {
-            System.out.println("User: " + user.username);
-            }
+        // Calling method to display all users
+        DisplayListOfUsers();
     }
     
     // Method to change username
@@ -226,16 +217,6 @@ public class User {
         // Message to inform the user that the username has been modified
         System.out.println("");
         System.out.println("Your username has been modified to: " + currentUser.username);
-        
-        // Displaying the existent users
-        System.out.println("");
-        System.out.println("See below the current list of users:");
-        System.out.println("");
-        
-        // Enhanced for loop to display the name of each of the users in the usersList array
-        for (User user : usersList) {
-            System.out.println("User: " + user.username);
-            }
     }
     
     // Method to change password
@@ -256,16 +237,6 @@ public class User {
         // Message to inform the user that the password has been modified
         System.out.println("");
         System.out.println("Your password has been modified to: " + currentUser.password);
-        
-        // Displaying the existent users
-        System.out.println("");
-        System.out.println("See below the current list of users:");
-        System.out.println("");
-        
-        // Enhanced for loop to display the name of each of the users in the usersList array
-        for (User user : usersList) {
-            System.out.println("User: " + user.username);
-            }
     }
     
     // Method to generate the different reports in different formats

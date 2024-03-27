@@ -6,6 +6,7 @@ package reportsgenerator;
 
 import java.util.Scanner;
 import static reportsgenerator.User.usersList;
+import static reportsgenerator.User.DisplayListOfUsers;
 
 /**
  *
@@ -54,12 +55,13 @@ public class MainMenu {
                 System.out.println("3 - To delete a user");
                 System.out.println("4 - To change your username");
                 System.out.println("5 - To change your password");
-                System.out.println("6 - To Exit");
+                System.out.println("6 - To display all users");
+                System.out.println("7 - To Exit");
                 selectedOperation = Integer.parseInt(userInput.nextLine());
                 // Parsing the selected operation to string, to be able to check regex condition below
                 selectedOperationToString = Integer.toString(selectedOperation);
                 // If the user enters wrong input, the program will print a helpful message
-                if ((!selectedOperationToString.matches("^[0-9]\\d*$")) || (selectedOperation < 1) || (selectedOperation > 6)) {
+                if ((!selectedOperationToString.matches("^[0-9]\\d*$")) || (selectedOperation < 1) || (selectedOperation > 7)) {
                     System.out.println("You have not entered the right character, please start again.");
                 // Option 1 for the admin to add any user
                 } else if (selectedOperation == 1) {
@@ -76,8 +78,11 @@ public class MainMenu {
                 // Option 5 for the admin to modify its password
                 } else if (selectedOperation == 5) {
                     admin.changeItsOwnPassword(admin);
-                // Option 6 to exit the program
+                // Option 6 to display current users
                 } else if (selectedOperation == 6) {
+                    DisplayListOfUsers();
+                // Option 7 to exit the program
+                } else if (selectedOperation == 7) {
                     System.out.println("See you next time!");
                     System.exit(0);
                 }
